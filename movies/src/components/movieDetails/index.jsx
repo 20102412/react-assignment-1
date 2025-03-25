@@ -8,7 +8,8 @@ import NavigationIcon from "@mui/icons-material/Navigation";
 import Fab from "@mui/material/Fab";
 import Typography from "@mui/material/Typography";
 import Drawer from "@mui/material/Drawer";
-import MovieReviews from "../movieReviews"
+import MovieReviews from "../movieReviews";
+import MovieCredits from "../movieCredits";
 
 const root = {
     display: "flex",
@@ -89,6 +90,7 @@ const MovieDetails = ({ movie }) => {  // Don't miss this!
       </Fab>
       <Drawer anchor="top" open={drawerOpen} onClose={() => setDrawerOpen(false)}>
         <MovieReviews movie={movie} />
+        <MovieCredits movie={movie} />
       </Drawer>
 
       </>
