@@ -159,11 +159,11 @@ export const getNowPlayingMovies = () => {
 };
 
 //Adding parameterised endpoint
-export const getMovieRecommendations = ({ queryKey }) => {
+export const getMovieCredits = ({ queryKey }) => {
   const [, idPart] = queryKey;
   const { id } = idPart;
   return fetch(
-    `https://api.themoviedb.org/3/movie/${id}/recommendations?api_key=${import.meta.env.VITE_TMDB_KEY}&language=en-US&page=1`
+    `https://api.themoviedb.org/3/movie/${id}/credits?api_key=${import.meta.env.VITE_TMDB_KEY}&language=en-US&page=1`
   ).then( (response) => {
     if (!response.ok) {
       return response.json().then((error) => {
