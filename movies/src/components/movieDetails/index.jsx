@@ -10,6 +10,7 @@ import Typography from "@mui/material/Typography";
 import Drawer from "@mui/material/Drawer";
 import MovieReviews from "../movieReviews";
 import MovieCredits from "../movieCredits";
+import MovieRecommendations from "../movieRecommendations";
 
 const root = {
     display: "flex",
@@ -90,7 +91,6 @@ const MovieDetails = ({ movie }) => {  // Don't miss this!
       </Fab>
       <Drawer anchor="top" open={drawerOpen} onClose={() => setDrawerOpen(false)}>
         <MovieReviews movie={movie} />
-        <MovieCredits movie={movie} />
       </Drawer>
 
       </>
