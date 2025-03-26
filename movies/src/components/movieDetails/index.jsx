@@ -9,8 +9,7 @@ import Fab from "@mui/material/Fab";
 import Typography from "@mui/material/Typography";
 import Drawer from "@mui/material/Drawer";
 import MovieReviews from "../movieReviews";
-import MovieCredits from "../movieCredits";
-import MovieRecommendations from "../movieRecommendations";
+import Divider from "@mui/material/Divider";
 
 const root = {
     display: "flex",
@@ -31,6 +30,7 @@ const MovieDetails = ({ movie }) => {  // Don't miss this!
       <Typography variant="h5" component="h3">
         Overview
       </Typography>
+      <Divider />
 
       <Typography variant="h6" component="p">
         {movie.overview}

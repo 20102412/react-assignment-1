@@ -49,7 +49,9 @@ const MovieCredits = (props) => {
                     <Avatar src = {actor.profile_path ? `https://image.tmdb.org/t/p/w500/${actor.profile_path}` : img} />
 
             
-                    <Chip label={`${actor.name} as ${actor.character}`} sx={{ ...chip }} />
+                    <Chip label={`${actor.name} as ${actor.character}`} sx={{ ...chip }}>
+                    </Chip>
+                    
                 </Paper>
             ))}
         </>

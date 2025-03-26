@@ -8,6 +8,7 @@ import Box from "@mui/material/Box";
 import Spinner from "../spinner";
 import { getMovieRecommendations } from "../../api/tmdb-api";
 import {CardHeader, CardMedia, Card, Typography } from "@mui/material";
+import Divider from '@mui/material/Divider';
 
 const root = {
     display: "flex",
@@ -41,8 +42,9 @@ const MovieRecommendations = (props) => {
     return (
         <Paper sx={{marginTop: 2}}>
             <Typography variant="h5" component="h3">
-                Recommendations
+                Recommended
             </Typography>
+            <Divider />
             {topRecommendations.map((otherMovie) => (
             
                 <Box
