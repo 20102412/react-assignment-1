@@ -6,6 +6,7 @@ import Spinner from '../components/spinner';
 import AddToFavoritesIcon from '../components/cardIcons/addToFavorites'
 
 
+
 const HomePage = (props) => {
 
   const { data, error, isPending, isError  } = useQuery({
@@ -40,4 +41,3 @@ const HomePage = (props) => {
 
 };
 export default HomePage;
-
