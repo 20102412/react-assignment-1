@@ -20,7 +20,7 @@ import { Avatar } from "@mui/material";
 
 const root = {
     display: "flex",
-    justifyContent: "center",
+    justifyContent: "left",
     flexWrap: "wrap",
     listStyle: "none",
     padding: 1.5,
